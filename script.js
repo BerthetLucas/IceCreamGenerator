@@ -38,6 +38,29 @@ document.addEventListener("DOMContentLoaded", function () {
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].viande;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
+
       });
+
+      threeScoopBtn.addEventListener("click", function () {
+
+        let randomIdex = Math.floor(Math.random() * 11);
+        let randomIdexA = Math.floor(Math.random() * 11);
+
+        let randomIdexB = Math.floor(Math.random() * 11);
+
+        oneScoopContainer.innerHTML = flavourdata[randomIdex].viande;
+        oneScoopContainer.style.display = "block";
+        flavourOneImg.src = `${flavourdata[randomIdex].img}`;
+
+        twoScoopContainer.innerHTML = flavourdata[randomIdexA].viande;
+        twoScoopContainer.style.display = "block";
+        flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
+
+        threeScoopContainer.innerHTML = flavourdata[randomIdexB].viande;
+        threeScoopContainer.style.display = "block";
+        flavourThreeImg.src = `${flavourdata[randomIdexB].img}`
+
+      });
+
     });
 });

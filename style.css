@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border : none; 
 }
 
 h1 {
@@ -9,19 +10,75 @@ h1 {
 }
 
 .flavour-container {
-    height: 50vh
+    height: 70vh; 
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 3em; 
+}
+
+.flavour-sub-container{
+  display: flex;
+  gap : 2em; 
+  
+}
+
+.oneScoop-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    gap : 1em
+
 }
 
 .oneScoop-container {
   display: none;
 }
 
+.flavourOneImg{
+  height : 7em; 
+  width : 7em; 
+  border-radius: 50%;
+}
+
+.twoScoop-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    gap : 1em
+
+}
+
 .twoScoop-container {
   display: none;
 }
 
+.flavourTwoImg{
+  height : 7em; 
+  width : 7em; 
+  border-radius: 50%;
+}
+
+.threeScoop-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    gap : 1em
+
+}
+
 .threeScoop-container {
   display: none;
+}
+
+.flavourThreeImg{
+  height : 7em; 
+  width : 7em; 
+  border-radius: 50%;
 }
 
 .choice-container {
