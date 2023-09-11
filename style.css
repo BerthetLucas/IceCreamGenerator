@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.flavour-container {
+    height: 50vh
+}
+
+.oneScoop-container {
+  display: none;
+}
+
+.twoScoop-container {
+  display: none;
+}
+
+.threeScoop-container {
+  display: none;
+}
+
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.choice-container-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.oneScoop {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  border: none;
+}
+.twoScoop {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  border: none;
+}
+.threeScoop {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  border: none;
+}

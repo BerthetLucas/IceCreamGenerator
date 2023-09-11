@@ -1,0 +1,57 @@
+[
+  {
+    "viande": "escalope",
+    "img": "img/escalope.jpg"
+  },
+
+  {
+    "viande": "steack",
+    "img": "img/steack.jpeg"
+  },
+
+  {
+    "viande": "merguez",
+    "img": "img/merguez.webp"
+  },
+
+  {
+    "viande": "kebab",
+    "img": "img/kebab.jpeg"
+  },
+
+  {
+    "viande": "lingette AJAX",
+    "img": "img/ajax.jpeg"
+  }, 
+
+  {
+    "viande": "nuggets",
+    "img": "img/nuggets.jpeg"
+  }, 
+
+  {
+    "viande": "cordons bleu",
+    "img": "img/cordonsbleu.webp"
+  }, 
+
+  {
+    "viande": "tenders",
+    "img": "img/tenders.webp"
+  }, 
+
+  {
+    "viande": "falafel",
+    "img": "img/falafel.webp"
+  }, 
+
+  {
+    "viande": "boulette de chez Ikea (à la merde)",
+    "img": "img/boulettesIkea.jpeg"
+  }, 
+
+  {
+    "viande": "sardine à la tomate",
+    "img": "img/sardines.jpeg"
+  }
+
+]
