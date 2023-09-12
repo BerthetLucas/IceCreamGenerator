@@ -1,3 +1,11 @@
+:root {
+  --lightgreen : #96ceb4; 
+  --cream : #ffeead; 
+   --pink : 	#ff6f69; 
+   --orange : #ffcc5c; 
+   --drakgreen : #88d8b0; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +19,12 @@ h1 {
 }
 
 .flavour-container {
-  height: 70vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
 }
 
 .flavour-sub-container {
@@ -35,6 +43,7 @@ h1 {
 .oneScoop-container {
   display: none;
   font-weight : bold; 
+  font-size: 1.3em;
 }
 
 .flavourOneImg {
@@ -54,6 +63,7 @@ h1 {
 .twoScoop-container {
   display: none;
   font-weight : bold; 
+  font-size: 1.3em; 
 }
 
 .flavourTwoImg {
@@ -73,6 +83,7 @@ h1 {
 .threeScoop-container {
   display: none;
   font-weight : bold; 
+  font-size: 1.3em; 
 }
 
 .flavourThreeImg {
@@ -86,30 +97,37 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .choice-container-btn {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  justify-items: center;
   gap: 2em;
+  background-color: red;
+  width : 70%; 
+  padding-top : 1em; 
+  padding-bottom : 1em; 
+  border-radius: 25px; ;
 }
 
 .oneScoop {
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
   border: none;
 }
 .twoScoop {
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
   border: none;
 }
 .threeScoop {
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
   border: none;
 }
