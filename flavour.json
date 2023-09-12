@@ -1,56 +1,56 @@
 [
   {
-    "viande": "escalope",
-    "img": "img/escalope.jpg"
+    "glace": "Chocolat",
+    "img": "img/chocolat.jpg"
   },
 
   {
-    "viande": "steack",
-    "img": "img/steack.jpeg"
+    "glace": "Vanille",
+    "img": "img/vanille.jpg"
   },
 
   {
-    "viande": "merguez",
-    "img": "img/merguez.webp"
+    "glace": "Pistache",
+    "img": "img/pistache.jpg"
   },
 
   {
-    "viande": "kebab",
-    "img": "img/kebab.jpeg"
+    "glace": "Caramel",
+    "img": "img/caramel.jpg"
   },
 
   {
-    "viande": "lingette AJAX",
-    "img": "img/ajax.jpeg"
+    "glace": "Citron",
+    "img": "img/citron.jpg"
   }, 
 
   {
-    "viande": "nuggets",
-    "img": "img/nuggets.jpeg"
+    "glace": "Mangue",
+    "img": "img/mangue.jpg"
   }, 
 
   {
-    "viande": "cordons bleu",
-    "img": "img/cordonsbleu.webp"
+    "glace": "Noisette",
+    "img": "img/noisette.jpg"
   }, 
 
   {
-    "viande": "tenders",
-    "img": "img/tenders.webp"
+    "glace": "Fraise",
+    "img": "img/fraise.jpg"
   }, 
 
   {
-    "viande": "falafel",
-    "img": "img/falafel.webp"
+    "glace": "Oreo",
+    "img": "img/oreo.jpg"
   }, 
 
   {
-    "viande": "boulette de chez Ikea",
-    "img": "img/boulettesIkea.jpeg"
+    "glace": "Passion",
+    "img": "img/passion.jpg"
   }, 
 
   {
-    "viande": "sardine à la tomate",
+    "glace": "Speculos",
     "img": "img/sardines.jpeg"
   }
 

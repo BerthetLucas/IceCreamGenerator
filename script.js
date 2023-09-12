@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let randomIdex = Math.floor(Math.random() * 11);
 
-        oneScoopContainer.innerHTML = flavourdata[randomIdex].viande;
+        oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
         flavourOneImg.src = `${flavourdata[randomIdex].img}`;
@@ -43,13 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let randomIdex = Math.floor(Math.random() * 11);
         let randomIdexA = Math.floor(Math.random() * 11);
 
-        oneScoopContainer.innerHTML = flavourdata[randomIdex].viande;
+        oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
 
         flavourOneImg.src = `${flavourdata[randomIdex].img}`;
 
-        twoScoopContainer.innerHTML = flavourdata[randomIdexA].viande;
+        twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
         flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
@@ -63,17 +63,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let randomIdexB = Math.floor(Math.random() * 11);
 
-        oneScoopContainer.innerHTML = flavourdata[randomIdex].viande;
+        oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
         flavourOneImg.src = `${flavourdata[randomIdex].img}`;
 
-        twoScoopContainer.innerHTML = flavourdata[randomIdexA].viande;
+        twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
         flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
 
-        threeScoopContainer.innerHTML = flavourdata[randomIdexB].viande;
+        threeScoopContainer.innerHTML = flavourdata[randomIdexB].glace;
         threeScoopContainer.style.display = "block";
         flavourThreeImg.style.display = "block";
         flavourThreeImg.src = `${flavourdata[randomIdexB].img}`;

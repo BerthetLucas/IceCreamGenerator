@@ -1,21 +1,26 @@
 :root {
-  --lightgreen : #96ceb4; 
-  --cream : #ffeead; 
-   --pink : 	#ff6f69; 
-   --orange : #ffcc5c; 
-   --drakgreen : #88d8b0; 
+  --lightgreen: #96ceb4;
+  --cream: #ffeead;
+  --pink: #ff6f69;
+  --orange: #ffcc5c;
+  --drakgreen: #88d8b0;
 }
 
 * {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
+}
+
+body {
+  background-color: var(--cream);
 }
 
 h1 {
   text-align: center;
   margin-top: 1em;
+  color : var(--pink)
 }
 
 .flavour-container {
@@ -42,7 +47,7 @@ h1 {
 
 .oneScoop-container {
   display: none;
-  font-weight : bold; 
+  font-weight: bold;
   font-size: 1.3em;
 }
 
@@ -62,8 +67,8 @@ h1 {
 
 .twoScoop-container {
   display: none;
-  font-weight : bold; 
-  font-size: 1.3em; 
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 .flavourTwoImg {
@@ -82,8 +87,8 @@ h1 {
 
 .threeScoop-container {
   display: none;
-  font-weight : bold; 
-  font-size: 1.3em; 
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 .flavourThreeImg {
@@ -106,28 +111,39 @@ h1 {
   justify-content: center;
   justify-items: center;
   gap: 2em;
-  background-color: red;
-  width : 70%; 
-  padding-top : 1em; 
-  padding-bottom : 1em; 
-  border-radius: 25px; ;
+  background-color: var(--drakgreen);
+  width: 70%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 25px;
+}
+
+.btn-container-title{
+  font-size: 1.2em;
+  font-weight : bold; 
 }
 
 .oneScoop {
   border-radius: 50%;
   height: 4em;
   width: 4em;
+  font-weight : bold; 
   border: none;
+  background-color: var(--pink);
 }
 .twoScoop {
   border-radius: 50%;
   height: 4em;
   width: 4em;
+  font-weight : bold; 
   border: none;
+  background-color: var(--pink);
 }
 .threeScoop {
   border-radius: 50%;
   height: 4em;
   width: 4em;
+  font-weight : bold; 
   border: none;
+  background-color: var(--pink);
 }
