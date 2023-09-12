@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       threeScoopBtn.addEventListener("click", function () {
-
         reset();
 
         let randomIdex = Math.floor(Math.random() * 11);
