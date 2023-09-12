@@ -55,6 +55,10 @@ h1 {
   height: 7em;
   width: 7em;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .twoScoop-main-container {
@@ -69,12 +73,16 @@ h1 {
   display: none;
   font-weight: bold;
   font-size: 1.3em;
+  
 }
 
 .flavourTwoImg {
   height: 7em;
   width: 7em;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .threeScoop-main-container {
@@ -95,6 +103,10 @@ h1 {
   height: 7em;
   width: 7em;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 .choice-container {

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
-        flavourOneImg.src = `${flavourdata[randomIdex].img}`;
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
       });
 
       twoScoopBtn.addEventListener("click", function () {
@@ -46,13 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
-
-        flavourOneImg.src = `${flavourdata[randomIdex].img}`;
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
-        flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
+        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`; 
       });
 
       threeScoopBtn.addEventListener("click", function () {
@@ -66,17 +65,17 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
-        flavourOneImg.src = `${flavourdata[randomIdex].img}`;
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
-        flavourTwoImg.src = `${flavourdata[randomIdexA].img}`;
+        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`; 
 
         threeScoopContainer.innerHTML = flavourdata[randomIdexB].glace;
         threeScoopContainer.style.display = "block";
         flavourThreeImg.style.display = "block";
-        flavourThreeImg.src = `${flavourdata[randomIdexB].img}`;
+        flavourThreeImg.style.backgroundImage = `url(${flavourdata[randomIdexB].img})`; 
       });
     });
 });
