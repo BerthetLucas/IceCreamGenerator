@@ -19,6 +19,7 @@ function reset() {
   flavourOneImg.style.display = "none";
   flavourTwoImg.style.display = "none";
   flavourThreeImg.style.display = "none";
+  oneScoopContainer.classList.remove('animate__animated', 'animate__bounce');
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,15 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(flavourdata);
 
       oneScoopBtn.addEventListener("click", function () {
+     
         reset();
 
         let randomIdex = Math.floor(Math.random() * 11);
 
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
+        oneScoopContainer.classList.add('animate__animated', 'animate__bounce'); 
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
+
       });
+
+      reset();
 
       twoScoopBtn.addEventListener("click", function () {
         reset();
