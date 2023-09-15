@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       });
 
-      reset();
-
       twoScoopBtn.addEventListener("click", function () {
         reset();
         let randomIdex = Math.floor(Math.random() * 11);
