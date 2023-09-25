@@ -20,8 +20,6 @@ function reset() {
   flavourOneImg.style.display = "none";
   flavourTwoImg.style.display = "none";
   flavourThreeImg.style.display = "none";
-  oneScoopContainer.classList.remove("animate__animated", "animate__bounce");
-  twoScoopContainer.classList.remove("animate__animated", "animate__bounce");
 
 }
 
@@ -38,10 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let randomIdex = Math.floor(Math.random() * 11);
       
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
-        oneScoopContainer.style.display = "block";
-        oneScoopContainer.classList.add("animate__animated", "animate__bounce");
+        oneScoopContainer.style.display = "block"; 
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
+        oneScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
+
+        oneScoopContainer.addEventListener('animationend', () => {
+          oneScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
         
       });
 
@@ -54,13 +56,21 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
-        oneScoopContainer.classList.add("animate__animated", "animate__bounce");
+        oneScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
         flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`;
-        twoScoopContainer.classList.add("animate__animated", "animate__bounce");
+        twoScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
+
+        oneScoopContainer.addEventListener('animationend', () => {
+          oneScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
+        twoScoopContainer.addEventListener('animationend', () => {
+          twoScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
+        
       });
 
       threeScoopBtn.addEventListener("click", function () {
@@ -75,16 +85,33 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
+        oneScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
+
+
+        oneScoopContainer.addEventListener('animationend', () => {
+          oneScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
         flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`;
+        twoScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
+        twoScoopContainer.addEventListener('animationend', () => {
+          twoScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
 
         threeScoopContainer.innerHTML = flavourdata[randomIdexB].glace;
         threeScoopContainer.style.display = "block";
         flavourThreeImg.style.display = "block";
         flavourThreeImg.style.backgroundImage = `url(${flavourdata[randomIdexB].img})`;
+        threeScoopContainer.classList.add("animate__animated", "animate__jackInTheBox");
+
+        threeScoopContainer.addEventListener('animationend', () => {
+          threeScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
+        })
+
+
       });
     });
 });
