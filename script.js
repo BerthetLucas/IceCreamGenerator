@@ -1,16 +1,16 @@
 console.log("yo");
 
-oneScoopContainer = document.querySelector(".oneScoop-container");
-twoScoopContainer = document.querySelector(".twoScoop-container");
-threeScoopContainer = document.querySelector(".threeScoop-container");
+const oneScoopContainer = document.querySelector(".oneScoop-container");
+const twoScoopContainer = document.querySelector(".twoScoop-container");
+const threeScoopContainer = document.querySelector(".threeScoop-container");
 
-flavourOneImg = document.querySelector(".flavourOneImg");
-flavourTwoImg = document.querySelector(".flavourTwoImg");
-flavourThreeImg = document.querySelector(".flavourThreeImg");
+const flavourOneImg = document.querySelector(".flavourOneImg");
+const flavourTwoImg = document.querySelector(".flavourTwoImg");
+const flavourThreeImg = document.querySelector(".flavourThreeImg");
 
-oneScoopBtn = document.querySelector(".oneScoop");
-twoScoopBtn = document.querySelector(".twoScoop");
-threeScoopBtn = document.querySelector(".threeScoop");
+const oneScoopBtn = document.querySelector(".oneScoop");
+const twoScoopBtn = document.querySelector(".twoScoop");
+const threeScoopBtn = document.querySelector(".threeScoop");
 
 function reset() {
   oneScoopContainer.style.display = "none";
@@ -19,7 +19,7 @@ function reset() {
   flavourOneImg.style.display = "none";
   flavourTwoImg.style.display = "none";
   flavourThreeImg.style.display = "none";
-  oneScoopContainer.classList.remove('animate__animated', 'animate__bounce');
+  oneScoopContainer.classList.remove("animate__animated", "animate__bounce");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,17 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(flavourdata);
 
       oneScoopBtn.addEventListener("click", function () {
-     
         reset();
 
         let randomIdex = Math.floor(Math.random() * 11);
 
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
-        oneScoopContainer.classList.add('animate__animated', 'animate__bounce'); 
+        oneScoopContainer.classList.add("animate__animated", "animate__bounce");
         flavourOneImg.style.display = "block";
-        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
-
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
       });
 
       twoScoopBtn.addEventListener("click", function () {
@@ -50,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
-        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
-        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`; 
+        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`;
       });
 
       threeScoopBtn.addEventListener("click", function () {
@@ -69,17 +67,17 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
-        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`; 
+        flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
-        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`; 
+        flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`;
 
         threeScoopContainer.innerHTML = flavourdata[randomIdexB].glace;
         threeScoopContainer.style.display = "block";
         flavourThreeImg.style.display = "block";
-        flavourThreeImg.style.backgroundImage = `url(${flavourdata[randomIdexB].img})`; 
+        flavourThreeImg.style.backgroundImage = `url(${flavourdata[randomIdexB].img})`;
       });
     });
 });
