@@ -21,6 +21,8 @@ function reset() {
   flavourTwoImg.style.display = "none";
   flavourThreeImg.style.display = "none";
   oneScoopContainer.classList.remove("animate__animated", "animate__bounce");
+  twoScoopContainer.classList.remove("animate__animated", "animate__bounce");
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {
