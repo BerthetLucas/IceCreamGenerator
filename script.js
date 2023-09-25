@@ -12,6 +12,7 @@ const oneScoopBtn = document.querySelector(".oneScoop");
 const twoScoopBtn = document.querySelector(".twoScoop");
 const threeScoopBtn = document.querySelector(".threeScoop");
 
+
 function reset() {
   oneScoopContainer.style.display = "none";
   twoScoopContainer.style.display = "none";
@@ -31,13 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
       oneScoopBtn.addEventListener("click", function () {
         reset();
 
+        
         let randomIdex = Math.floor(Math.random() * 11);
-
+      
         oneScoopContainer.innerHTML = flavourdata[randomIdex].glace;
         oneScoopContainer.style.display = "block";
         oneScoopContainer.classList.add("animate__animated", "animate__bounce");
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
+        
       });
 
       twoScoopBtn.addEventListener("click", function () {
