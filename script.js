@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
           threeScoopContainer.classList.remove("animate__animated", "animate__jackInTheBox");
         })
 
-
       });
     });
 });
