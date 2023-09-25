@@ -52,11 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
         oneScoopContainer.style.display = "block";
         flavourOneImg.style.display = "block";
         flavourOneImg.style.backgroundImage = `url(${flavourdata[randomIdex].img})`;
+        oneScoopContainer.classList.add("animate__animated", "animate__bounce");
 
         twoScoopContainer.innerHTML = flavourdata[randomIdexA].glace;
         twoScoopContainer.style.display = "block";
         flavourTwoImg.style.display = "block";
         flavourTwoImg.style.backgroundImage = `url(${flavourdata[randomIdexA].img})`;
+        twoScoopContainer.classList.add("animate__animated", "animate__bounce");
       });
 
       threeScoopBtn.addEventListener("click", function () {
